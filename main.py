@@ -85,12 +85,13 @@ detail = ""
 for sentence in sentences:
     if sentence == "":
         continue
+    id += 1
+    print(id)  
     print(sentence)
     print("\n")
     print("Nhấn phím 'space' để bắt đầu ghi âm\n Phím mũi tên down để dừng\n Phím mũi tên <- để ghi âm lại\n Phím mũi tên -> để chọn câu tiếp theo")
     detail += id.__str__() + ".wav\n";
     detail += sentence + "\n";
-    id += 1
     while(True):
         while not keyboard.is_pressed("space"):
             pass
